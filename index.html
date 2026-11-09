@@ -81,6 +81,15 @@
     .methods p { color:var(--muted); font-size:16px; line-height:1.8; margin-bottom:0; }
     .chips { display:flex; flex-wrap:wrap; gap:11px; }
     .chip { border:1px solid #ccd8df; background:#fff; color:#324c5b; border-radius:40px; padding:12px 16px; font-size:13px; }
+    .datasets-intro { max-width:850px; margin:0 0 35px; }
+    .datasets-intro a { color:var(--accent); text-underline-offset:3px; }
+    .dataset-list { max-width:960px; }
+    .dataset-entry { margin:0 0 28px; }
+    .dataset-title { margin:0 0 7px; font-size:18px; font-weight:650; line-height:1.45; letter-spacing:-.01em; }
+    .dataset-title a { color:#26333d; text-decoration:underline; text-decoration-thickness:1px; text-underline-offset:4px; }
+    .dataset-title a:hover,.dataset-title a:focus-visible { color:var(--accent); }
+    .dataset-description { margin:0 0 5px; color:var(--muted); font-size:15px; line-height:1.7; }
+    .dataset-id { margin:0; color:#667781; font-size:13px; }
     .pub-scholar { font-size:16px; color:var(--muted); line-height:1.65; margin:0; }
     .pub-scholar a { color:var(--accent); text-decoration:underline; text-underline-offset:3px; font-weight:600; }
     .pub-list { max-width:960px; margin-top:36px; }
@@ -270,9 +279,20 @@
     </section>
     <section id="datasets" class="content" aria-labelledby="datasets-title">
       <div class="wrap">
-        
         <h2 id="datasets-title">Datasets</h2>
-        <p class="body-copy">Open research datasets and analysis resources will be featured here.</p>
+        <p class="body-copy datasets-intro">We believe that sharing research data openly is essential for reproducible science and for making new discoveries. Our neurophysiological recordings and associated behavioural data are available through the <a href="https://dandiarchive.org/" target="_blank" rel="noopener noreferrer">DANDI Archive</a>, where researchers and students can explore the recordings, reanalyse neural activity and develop new approaches to understanding brain circuits.</p>
+        <div class="dataset-list">
+          <article class="dataset-entry">
+            <h3 class="dataset-title"><a href="https://dandiarchive.org/dandiset/000939" target="_blank" rel="noopener noreferrer">Large-scale recordings of head-direction cells in mouse postsubiculum</a></h3>
+            <p class="dataset-description">Extracellular recordings of head-direction neurons in the mouse postsubiculum, alongside behavioural data.</p>
+            <p class="dataset-id">DANDI:000939</p>
+          </article>
+          <article class="dataset-entry">
+            <h3 class="dataset-title"><a href="https://dandiarchive.org/dandiset/001699" target="_blank" rel="noopener noreferrer">Altered developmental profile of the head-direction signal in a rat model of Fragile X Syndrome</a></h3>
+            <p class="dataset-description">Postsubicular electrophysiological recordings from juvenile and adult rats, including a model of Fragile X Syndrome and wild-type controls, during exploration and sleep.</p>
+            <p class="dataset-id">DANDI:001699</p>
+          </article>
+        </div>
       </div>
     </section>
     <section id="join-dulab" class="content alternate-section" aria-labelledby="join-title">

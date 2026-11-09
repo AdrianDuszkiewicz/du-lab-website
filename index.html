@@ -12,7 +12,7 @@
   <link rel="canonical" href="https://www.du-lab.com/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
 
   <title>DuLab | University of Manchester</title>
   <style>
@@ -70,6 +70,9 @@
     }
     .research-copy { max-width:850px; }
     .research-copy p { margin-bottom:26px; }
+    .research-figure { max-width:850px; margin:38px 0 0; }
+    .research-figure img { display:block; width:100%; height:auto; }
+    .research-figure figcaption { margin-top:13px; color:var(--muted); font-family:"Caveat","Segoe Print",cursive; font-size:clamp(20px,2.2vw,25px); line-height:1.3; text-align:center; }
     .research-university-logo { margin-top:44px; }
     .research-university-logo img { display:block; width:260px; max-width:100%; height:auto; }
     .research-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:17px; margin-top:58px; }
@@ -164,6 +167,10 @@
           <p>At the DuLab, we investigate the neural circuits and computations that allow the brain to accurately reconstruct the external world. We focus on the <strong>head-direction system, the brain's internal compass</strong>, a network of neurons that continuously tracks which way we are facing. This relatively simple but remarkably precise neural representation provides a powerful window into the fundamental mechanisms by which the brain builds, maintains, and updates its internal world models.</p>
           <p>By combining large-scale recordings of neural activity, precisely controlled sensory environments and targeted circuit manipulations, we investigate how the brain integrates information from multiple streams to maintain an accurate sense of direction. We also study how such neural representations evolve <strong>during sleep</strong>, when the brain generates structured activity largely independently of external sensory input. <strong>Our ultimate goal</strong> is to uncover how neural circuits generate, maintain and update internal representations of the world, and what happens when these mechanisms fail.</p>
         </div>
+        <figure class="research-figure">
+          <img src="NREM-REM.png" alt="Head-direction neuron spiking coloured by preferred direction during movement and the transition from slow-wave sleep to REM sleep" loading="lazy" decoding="async">
+          <figcaption>Spiking of head-direction cells coloured according to their preferred directions, during movement (top) and during the transition from slow-wave sleep to REM sleep (bottom)</figcaption>
+        </figure>
         <div class="research-university-logo"><a href="https://www.manchester.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="The University of Manchester website"><img src="UoM%20logo.png" alt="The University of Manchester logo" loading="lazy" decoding="async"></a></div>
       </div>
     </section>

@@ -49,6 +49,8 @@
     .intro-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:80px; align-items:start; }
     .body-copy { color:var(--muted); font-size:17px; line-height:1.85; }
     .body-copy p:last-child { margin-bottom:0; }
+    .research-copy { max-width:850px; }
+    .research-copy p { margin-bottom:26px; }
     .research-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:17px; margin-top:58px; }
     .research-card { transition:background .2s ease,border-color .2s ease; border:1px solid var(--line); background:#fff; padding:29px 27px 31px; min-height:215px; }
     .research-card:hover { background:#f7fafb; border-color:#98b3c0; }
@@ -121,23 +123,14 @@
     </section>
     <section id="research" class="content" aria-labelledby="research-title">
       <div class="wrap">
-        <div class="intro-grid">
-          <div><p class="section-label">What we study</p><h2 id="research-title">The brain's internal compass.</h2></div>
-          <div class="body-copy"><p>Knowing where we're facing feels effortless. Behind that experience lies a network of neurons that continuously tracks direction, combines information from our movements and senses, and anchors our internal representation to the environment.</p><p>At the Duszkiewicz Lab, we study the circuitry and computations that make this possible, with a focus on the head-direction system and the cortical networks supporting spatial orientation.</p></div>
-        </div>
-        <div class="research-grid">
-          <article class="research-card"><p class="num">01 / CIRCUITS</p><h3>Head-direction networks</h3><p>How do populations of neurons represent and maintain an internal estimate of heading?</p></article>
-          <article class="research-card"><p class="num">02 / SENSORY INPUT</p><h3>Visual anchoring</h3><p>How do landmarks and visual information calibrate the brain's directional representation?</p></article>
-          <article class="research-card"><p class="num">03 / COMPUTATION</p><h3>Neural dynamics</h3><p>How do cortical circuits integrate signals and stabilise spatial representations over time?</p></article>
+        <h2 id="research-title">Research</h2>
+        <div class="body-copy research-copy">
+          <p>The brain has an extraordinary ability to generate detailed internal representations of the world. We can experience this whenever we close our eyes and try to imagine where we are now, or when we wake up from a vivid dream. These experiences remind us that the brain does not simply process information arriving from our senses. Instead, it actively constructs an internal model of the self within an environment. But how does the brain create these representations, and how does it keep them accurately aligned with reality?</p>
+          <p>At the DuLab, we investigate the neural circuits and computations that allow the brain to accurately reconstruct the external world. We focus on the head-direction system, the brain's internal compass, a network of neurons that continuously tracks which way we are facing. This relatively simple but remarkably precise neural representation provides a powerful window into the fundamental mechanisms by which the brain builds, maintains, and updates its internal world models.</p>
+          <p>By combining large-scale recordings of neural activity, precisely controlled sensory environments and targeted circuit manipulations, we investigate how the brain integrates information from multiple streams to maintain an accurate sense of direction. We also study how such neural representations evolve during sleep, when the brain generates structured activity largely independently of external sensory input. Our ultimate goal is to uncover how neural circuits generate, maintain and update internal representations of the world, and what happens when these mechanisms fail.</p>
         </div>
       </div>
     </section>
-    <div class="content methods" aria-labelledby="methods-title">
-      <div class="wrap methods-grid">
-        <div><p class="section-label">Our approach</p><h2 id="methods-title">From neurons to navigation.</h2><p>We combine large-scale neural recordings, controlled visual environments and computational analysis to understand how spatial representations emerge from circuit activity.</p></div>
-        <div class="chips" aria-label="Research methods"><span class="chip">Neuropixels recordings</span><span class="chip">Head-direction circuits</span><span class="chip">Visual environments</span><span class="chip">Closed-loop experiments</span><span class="chip">Population dynamics</span><span class="chip">Computational modelling</span></div>
-      </div>
-    </div>
     <section id="people" class="content" aria-labelledby="people-title">
       <div class="wrap">
         <p class="section-label">The team</p>

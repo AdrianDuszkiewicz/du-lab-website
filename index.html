@@ -25,7 +25,7 @@
     .site-header { background:#fff; color:var(--ink); border-bottom:1px solid var(--line); }
     .header-inner { display:flex; align-items:center; justify-content:space-between; padding-block:25px; gap:20px; }
     .brand { text-decoration:none; display:flex; align-items:center; gap:12px; font-weight:750; letter-spacing:.075em; font-size:14px; }
-    nav { display:flex; flex-wrap:wrap; gap:28px; }
+    nav { display:flex; flex-wrap:wrap; gap:13px 23px; }
     nav a { font-size:13px; color:#4d5c67; text-decoration:none; transition:color .2s; }
     nav a:hover { color:var(--accent); }
     .hero { background:#fff; color:var(--ink); overflow:hidden; border-bottom:1px solid var(--line); }
@@ -43,7 +43,7 @@
     .button-link span { color:var(--accent); font-size:20px; line-height:13px; }
     .hero-foot { display:flex; gap:15px; flex-wrap:wrap; margin-top:55px; }
     .hero-foot span { border-top:1px solid #c8d3da; padding-top:14px; color:#60707a; font-size:11px; letter-spacing:.08em; text-transform:uppercase; }
-    section.content { padding-block:91px; }
+    .content { padding-block:91px; }
     .section-label { font-size:11px; letter-spacing:.18em; font-weight:750; color:var(--accent); text-transform:uppercase; margin-bottom:18px; }
     h2 { font-size:clamp(35px,4vw,49px); letter-spacing:-.035em; line-height:1.16; margin-bottom:22px; }
     .intro-grid { display:grid; grid-template-columns:.85fr 1.15fr; gap:80px; align-items:start; }
@@ -60,6 +60,7 @@
     .methods p { color:var(--muted); font-size:16px; line-height:1.8; margin-bottom:0; }
     .chips { display:flex; flex-wrap:wrap; gap:11px; }
     .chip { border:1px solid #ccd8df; background:#fff; color:#324c5b; border-radius:40px; padding:12px 16px; font-size:13px; }
+    .alternate-section { background:#f7f9fa; border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
     .contact { background:#fff; color:var(--ink); }
     .contact-grid { display:grid; grid-template-columns:1fr 1fr; gap:65px; align-items:start; }
     .contact .section-label { color:var(--accent); }
@@ -93,7 +94,15 @@
   <header class="site-header">
     <div class="wrap header-inner">
       <a class="brand" href="#top" aria-label="Duszkiewicz Lab home"><span>DUSZKIEWICZ LAB</span></a>
-      <nav aria-label="Main navigation"><a href="#research">Research</a><a href="#approach">Approach</a><a href="#contact">Contact</a></nav>
+      <nav aria-label="Main navigation">
+        <a href="#top">Home</a>
+        <a href="#research">Research</a>
+        <a href="#people">People</a>
+        <a href="#publications">Publications</a>
+        <a href="#datasets">Datasets</a>
+        <a href="#join-dulab">Join DuLab</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
   </header>
   <main id="main">
@@ -123,10 +132,41 @@
         </div>
       </div>
     </section>
-    <section id="approach" class="content methods" aria-labelledby="methods-title">
+    <div class="content methods" aria-labelledby="methods-title">
       <div class="wrap methods-grid">
         <div><p class="section-label">Our approach</p><h2 id="methods-title">From neurons to navigation.</h2><p>We combine large-scale neural recordings, controlled visual environments and computational analysis to understand how spatial representations emerge from circuit activity.</p></div>
         <div class="chips" aria-label="Research methods"><span class="chip">Neuropixels recordings</span><span class="chip">Head-direction circuits</span><span class="chip">Visual environments</span><span class="chip">Closed-loop experiments</span><span class="chip">Population dynamics</span><span class="chip">Computational modelling</span></div>
+      </div>
+    </div>
+    <section id="people" class="content" aria-labelledby="people-title">
+      <div class="wrap">
+        <p class="section-label">The team</p>
+        <h2 id="people-title">People</h2>
+        <div class="body-copy">
+          <p><strong>Dr Adrian J. Duszkiewicz</strong><br>Principal Investigator, University of Manchester</p>
+        </div>
+      </div>
+    </section>
+    <section id="publications" class="content alternate-section" aria-labelledby="publications-title">
+      <div class="wrap">
+        <p class="section-label">Research outputs</p>
+        <h2 id="publications-title">Publications</h2>
+        <p class="body-copy">Selected publications will be listed here.</p>
+      </div>
+    </section>
+    <section id="datasets" class="content" aria-labelledby="datasets-title">
+      <div class="wrap">
+        <p class="section-label">Open science</p>
+        <h2 id="datasets-title">Datasets</h2>
+        <p class="body-copy">Open research datasets and analysis resources will be featured here.</p>
+      </div>
+    </section>
+    <section id="join-dulab" class="content alternate-section" aria-labelledby="join-title">
+      <div class="wrap">
+        <p class="section-label">Work with us</p>
+        <h2 id="join-title">Join DuLab</h2>
+        <p class="body-copy">Interested in joining the lab? Get in touch to discuss research interests and potential opportunities.</p>
+        <a class="button-link" href="#contact">Contact us <span aria-hidden="true">↗</span></a>
       </div>
     </section>
     <section id="contact" class="content contact" aria-labelledby="contact-title">

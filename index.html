@@ -35,10 +35,10 @@
     .hero-banner { width:100%; background:#000; }
     .hero-banner-inner { position:relative; max-width:1400px; margin:0 auto; }
     .hero-banner img { display:block; width:100%; height:auto; }
-    .logo-overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:block; max-width:calc(100% - 24px); padding:clamp(12px,2.2vw,28px) clamp(16px,3.4vw,48px); background:rgba(0,0,0,.5); border:1px solid rgba(185,161,238,.22); backdrop-filter:blur(3px); -webkit-backdrop-filter:blur(3px); color:#f8f6ff; font-family:"Space Grotesk",Arial,sans-serif; font-size:clamp(18px,4.2vw,62px); line-height:1.12; white-space:nowrap; text-align:center; }
+    .logo-overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:block; max-width:calc(100% - 24px); padding:clamp(12px,2.2vw,28px) clamp(16px,3.4vw,48px); background:rgba(0,0,0,.5); border:1px solid rgba(102,0,153,.35); backdrop-filter:blur(3px); -webkit-backdrop-filter:blur(3px); color:#f8f6ff; font-family:"Space Grotesk",Arial,sans-serif; font-size:clamp(18px,4.2vw,62px); line-height:1.12; white-space:nowrap; text-align:center; }
     .logo-name { display:inline; font-size:1em; font-weight:600; letter-spacing:-.055em; }
-    .du-highlight { color:#b9a1ee; font-weight:700; }
-    .lab-word { display:inline; margin:0; color:#b9a1ee; font-size:1em; font-weight:700; letter-spacing:inherit; }
+    .du-highlight { color:#660099; font-weight:700; text-shadow:0 0 7px rgba(255,255,255,.32); }
+    .lab-word { display:inline; margin:0; color:#660099; font-size:1em; font-weight:700; letter-spacing:inherit; text-shadow:0 0 7px rgba(255,255,255,.32); }
     .hero-inner { padding:76px 0 86px; }
     .hero-copy { max-width:900px; }
     .eyebrow { margin:0 0 27px; font-size:11px; font-weight:750; letter-spacing:.19em; text-transform:uppercase; color:var(--accent); }
@@ -68,6 +68,8 @@
     }
     .research-copy { max-width:850px; }
     .research-copy p { margin-bottom:26px; }
+    .research-university-logo { margin-top:44px; }
+    .research-university-logo img { display:block; width:260px; max-width:100%; height:auto; }
     .research-grid { display:grid; grid-template-columns:repeat(3,1fr); gap:17px; margin-top:58px; }
     .research-card { transition:background .2s ease,border-color .2s ease; border:1px solid var(--line); background:#fff; padding:29px 27px 31px; min-height:215px; }
     .research-card:hover { background:#f7fafb; border-color:#98b3c0; }
@@ -150,6 +152,7 @@
           <p>At the DuLab, we investigate the neural circuits and computations that allow the brain to accurately reconstruct the external world. We focus on the <strong>head-direction system, the brain's internal compass</strong>, a network of neurons that continuously tracks which way we are facing. This relatively simple but remarkably precise neural representation provides a powerful window into the fundamental mechanisms by which the brain builds, maintains, and updates its internal world models.</p>
           <p>By combining large-scale recordings of neural activity, precisely controlled sensory environments and targeted circuit manipulations, we investigate how the brain integrates information from multiple streams to maintain an accurate sense of direction. We also study how such neural representations evolve <strong>during sleep</strong>, when the brain generates structured activity largely independently of external sensory input. <strong>Our ultimate goal</strong> is to uncover how neural circuits generate, maintain and update internal representations of the world, and what happens when these mechanisms fail.</p>
         </div>
+        <div class="research-university-logo"><a href="https://www.manchester.ac.uk/" target="_blank" rel="noopener noreferrer" aria-label="The University of Manchester website"><img src="UoM%20logo.png" alt="The University of Manchester logo" loading="lazy" decoding="async"></a></div>
       </div>
     </section>
     <section id="people" class="content" aria-labelledby="people-title">
@@ -281,9 +284,10 @@
       </div>
     </section>
     <section id="contact" class="content contact" aria-labelledby="contact-title">
-      <div class="wrap contact-grid">
-        <div><h2 id="contact-title">Let's connect.</h2><p>For research enquiries or collaborations, please find our current contact details through the University of Manchester staff directory.</p></div>
-        <div><h3>Dr Adrian J. Duszkiewicz</h3><address>Principal Investigator<br>Division of Neuroscience<br>University of Manchester<br>Stopford Building, Oxford Road<br>Manchester M13 9PL, United Kingdom</address></div>
+      <div class="wrap">
+        <h2 id="contact-title">Contact</h2>
+        <h3>Dr Adrian J. Duszkiewicz</h3>
+        <address>Principal Investigator<br>Division of Neuroscience<br>University of Manchester<br>Stopford Building, Oxford Road<br>Manchester M13 9PL, United Kingdom</address>
       </div>
     </section>
   </main>

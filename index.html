@@ -35,10 +35,10 @@
     .hero-banner { width:100%; background:#000; }
     .hero-banner-inner { position:relative; max-width:1400px; margin:0 auto; }
     .hero-banner img { display:block; width:100%; height:auto; }
-    .logo-overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:flex; flex-direction:row; align-items:baseline; justify-content:center; gap:.26em; max-width:calc(100% - 24px); padding:clamp(12px,2.2vw,28px) clamp(16px,3.4vw,48px); background:rgba(0,0,0,.5); border:1px solid rgba(137,186,255,.20); backdrop-filter:blur(3px); -webkit-backdrop-filter:blur(3px); color:#f8f6ff; font-family:"Space Grotesk",Arial,sans-serif; font-size:clamp(18px,4.2vw,62px); line-height:1.12; white-space:nowrap; text-align:center; }
+    .logo-overlay { position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); display:block; max-width:calc(100% - 24px); padding:clamp(12px,2.2vw,28px) clamp(16px,3.4vw,48px); background:rgba(0,0,0,.5); border:1px solid rgba(185,161,238,.22); backdrop-filter:blur(3px); -webkit-backdrop-filter:blur(3px); color:#f8f6ff; font-family:"Space Grotesk",Arial,sans-serif; font-size:clamp(18px,4.2vw,62px); line-height:1.12; white-space:nowrap; text-align:center; }
     .logo-name { display:inline; font-size:1em; font-weight:600; letter-spacing:-.055em; }
-    .du-highlight { color:#89baff; font-weight:700; }
-    .lab-word { display:inline; margin:0; color:#89baff; font-size:.94em; font-weight:500; letter-spacing:-.015em; }
+    .du-highlight { color:#b9a1ee; font-weight:700; }
+    .lab-word { display:inline; margin:0; color:#b9a1ee; font-size:1em; font-weight:700; letter-spacing:inherit; }
     .hero-inner { padding:76px 0 86px; }
     .hero-copy { max-width:900px; }
     .eyebrow { margin:0 0 27px; font-size:11px; font-weight:750; letter-spacing:.19em; text-transform:uppercase; color:var(--accent); }
@@ -125,7 +125,7 @@
     <section class="hero" id="top" aria-label="DuLab homepage banner">
       <div class="hero-banner"><div class="hero-banner-inner">
         <img src="weblogo.png" alt="DuLab logo on a black background" width="816" height="274" fetchpriority="high">
-        <div class="logo-overlay" aria-label="DUszkiewicz Lab"><span class="logo-name"><span class="du-highlight">DU</span>szkiewicz</span><span class="lab-word">LAB</span></div>
+        <div class="logo-overlay" aria-label="DUszkiewiczLAB"><span class="logo-name"><span class="du-highlight">DU</span>szkiewicz<span class="lab-word">LAB</span></span></div>
       </div></div>
     </section>
     <section id="research" class="content" aria-labelledby="research-title">
